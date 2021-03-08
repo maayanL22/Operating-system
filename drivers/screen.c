@@ -17,7 +17,7 @@ int get_offset_col(int offset);
 
 /**
  * Print a message on the specified location
- * If col, row, are negative, we will use the current offset
+ * If col, row, are negative, use the current offset
  */
 void kprint_at(char *message, int col, int row) {
     /* Set cursor if col/row are negative */
@@ -60,7 +60,7 @@ void kprint_backspace() {
 /**
  * Innermost print function for our kernel, directly accesses the video memory 
  *
- * If 'col' and 'row' are negative, we will print at current cursor location
+ * If 'col' and 'row' are negative, print at current cursor location
  * If 'attr' is zero it will use 'white on black' as default
  * Returns the offset of the next character
  * Sets the video cursor to the returned offset
