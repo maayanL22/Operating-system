@@ -1,4 +1,5 @@
 ; receiving the data in 'dx'
+; meanwhile for example assumed we get 0x1234
 print_hex:
     pusha
 
